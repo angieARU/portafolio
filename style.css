@@ -1,0 +1,272 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    background-color: #F3F5FC;;
+
+}
+
+header {
+    width: 100%;
+   
+    
+}
+header img {
+    margin: 10px 0;
+    height: 25px;
+}
+
+.main {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 70%;
+}
+
+.section_1 {
+    width: 60%;
+}
+.secction_2 {
+    width: auto;
+    height: auto;
+   
+    justify-content: center;
+    flex-direction: column;
+    
+}
+
+.texto {
+    width: 100%;
+    height: 400px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    resize: none;
+}
+.texto::placeholder {
+    
+    position: absolute;
+    top: 18px;
+    font-family: 'Inter';
+    
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 50%;
+    /* identical to box height, or 48px */
+    
+    /* Dark blue/dark-blue-300 */
+    color: #0A3871; }
+
+
+
+    
+.informacion {
+  display: flex;
+  align-items: center;
+}
+
+.informacion img {
+    margin: 0 5px;
+}
+.informacion h6 {
+    color: rgb(145, 145, 145);
+}
+
+.botones {
+   display: flex;
+   justify-content: center;
+   margin: 25px 0;
+    
+}
+
+
+.encriptar {
+    width: 250px;
+    height: 45px;
+    margin: 10px 10px;
+    border-radius: 20px;
+    color: #ffffff;
+    cursor: pointer;
+    font-family: 'Inter';
+    background-color: #0A3871;
+
+}
+
+.desencriptar {
+    width: 250px;
+    height: 45px;
+    margin: 10px 10px;
+    border-radius: 20px;
+    border: 1px solid #0A7130;
+    color: #0A3871;
+    cursor: pointer;
+    background: #D8DFE8;
+   ;
+
+}
+
+
+
+
+.texto2 {
+  background-image: url(assets/persona.png);
+  background-position: 30px 140px;
+  background-repeat: no-repeat;
+  background-size: 70%;
+  width: 250px;
+  height: 510px;
+  resize: auto;
+  outline: none;
+  border: none;
+  
+  border-radius: 25px;
+  box-shadow: 0 24px 32px #0000000a;
+  padding: 20px;
+}
+.ningun_mensaje h4 {
+    margin-bottom: 10px;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    font-weight: bold;
+    flex-wrap:wrap;
+    align-content: center;
+    color: #0A3871;
+    font-size-adjust: 20px;
+    
+
+}
+.ningun_mensaje p{
+    font-size-adjust: 5px;
+    position: absolute;
+}
+.ningun_mensaje{
+    width: 170px;
+    position: absolute;
+    text-align: center;
+    justify-content: center;
+    position: absolute;
+    top: 370px;    
+    right: 75px;
+    
+}
+
+
+
+.container_copiar {
+   display: flex;
+   justify-content: center;
+}
+
+  
+
+
+/* MOBILE  */
+
+@media (max-width: 800px) {
+  
+
+    header {
+        width: 100vmax;
+    }
+    header img {
+        margin: 10px 0;
+        height: 25px;
+    }
+    
+ 
+    .texto {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+       width: 100%;
+       height: 60%;
+       border-radius: none;
+       border: none;
+       outline: none;
+       resize: none;
+       background: transparent;
+       align-self: center;
+    }
+  
+   
+    .botones,.ningun_mensaje,.informacion,.secction_2,.section_1,.text_area_encriptado {
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin: 20px 10px;
+        
+    }
+  
+    
+    
+    .encriptar, .desencriptar {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      width: 190px;
+      height: 50px;
+      border: 0.5px solid #0A3871;
+      border-radius: 20px;
+    
+    }
+    
+    .encriptar {
+        background-color:#0A3871;
+        color: #ffffff;
+        margin-bottom: 20px;
+    }
+    
+    .desencriptar {
+        background-color: transparent;
+    }
+    
+    .texto2 {
+        background-image: none;
+ 
+       width: 140px;
+       height: 50px;
+       margin: auto;
+      
+  
+       display: flex;
+  
+     
+     
+     
+       border-radius: 10px;
+       box-shadow: 0 24px 32px #0000;
+    }
+    
+    .ningun_mensaje h4 {
+        margin-bottom: 10px;
+        text-align: center;
+        justify-content: center;
+        display: flex;
+        font-weight: bold;
+        flex-wrap:wrap;
+        align-content: center;
+        color: #0A3871;
+        font-size-adjust: 10px;
+        
+    
+    }
+    .ningun_mensaje p{
+        font-size-adjust: 5px;
+    
+    }
+  }
+
+
+
+
+
+
